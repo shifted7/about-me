@@ -1,7 +1,7 @@
 'use strict'
 
 var userName = prompt('Please enter your name:');
-alert('Hello, '+userName+' welcome to my About Me project quiz!')
+alert('Hello '+userName+', welcome to my About Me project quiz!')
 
 var nameResponse = prompt('Question 1: Is my name Andrew?');
 //normalize response
@@ -73,4 +73,4 @@ if(tuckerResponseNorm === 'Y'||tuckerResponseNorm === 'YES'){
     alert('Invalid response, please reload the page and respond yes or no.');
 }
 
-alert('Thanks for playing, '+userName+'!')
+alert('Thanks for taking my About Me quiz, '+userName+'!')
