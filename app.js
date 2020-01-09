@@ -1,9 +1,70 @@
 'use strict'
 
+var questions = ['Is my name Andrew?', 'Am I younger than 25 years old?', 'Is green my favorite color?', 'Have I lived in China?', 'Does my family have a cat named Tucker?', 'How many siblings do I have?', 'What month was I born in?'];
+var answers = ['Yes', 'No', 'Yes', 'Yes', 'No', 1, 'August'];
+var incorrect = ['No', 'Yes', 'No', 'No', 'Yes'];
+var correctMsg = ['Correct!','Correct! I am 27.','Correct!', 'Correct! I lived there for a year.', 'Correct! Tucker is a dog, not a cat :)', 'Correct! I have 1 younger sister.', ]
+var incorrectMsg = ['Incorrect.', 'Incorrect, I am 27.', 'Incorrect.', 'Incorrect. I lived there for a year.', 'Incorrect. Tucker is a dog, not a cat :)']
+var invalidMsg = 'Invalid response. Please respond with yes or no.'
+var userResponse = ''
+var userScore = 0
+
 var userName = prompt('Please enter your name:');
 alert('Hello '+userName+', welcome to my About Me project quiz!')
 
-var nameResponse = prompt('Question 1: Is my name Andrew?');
+var i = 0
+while(i<questions.length) {
+    userResponse = prompt('Question '+(i+1)+': '+ questions[i]);
+    switch(userResponse.toUpperCase()){
+        case answers[i].toUpperCase(): // Checks for exact match correct response
+            userScore++;
+            alert(correctMsg[i]);
+            i++;
+            break;
+        case answers[i].toUpperCase().charAt(0): // Checks for y or n correct response
+            userScore++;
+            alert(correctMsg[i]);
+            i++;
+            break;
+        case incorrect[i].toUpperCase(): // Checks for exact match incorrect response
+            alert(incorrectMsg[i]);
+            i++;
+            break;
+        case incorrect[i].toUpperCase().charAt(0): // Checks for y or n incorrect response
+            alert(incorrectMsg[i]);
+            i++;
+            break;
+        default:
+            alert(invalidMsg);
+            break;
+    }
+}
+var qNum = 5;
+var attempts = 4;
+var highNumberMsg = 'Incorrect, I have fewer siblings than you guessed.'
+var lowNumberMsg = 'Incorrect, I have more siblings than you guessed.'
+var invalidNumMsg = 'Invalid response. Please respond with a number.'
+while (attempts > 0) {
+    userResponse = prompt(questions[qNum]+'(You have '+attempts+' left.)');
+    if (userResponse === answers[qNum]){
+        userScore++;
+        alert(correctMsg(qNum));
+        attempts = 0;
+    } else if (userResponse > answers[qNum]) {
+        attempts--;
+        alert(highNumberMsg);
+    } else if (userResponse < answers[qNum]) {
+        attempts--;
+        alert(lowNumberMsg);
+    } else {
+        attempts--;
+        alert(invalidNumMsg);
+    }
+}
+
+alert('Thanks for taking my About Me quiz, '+userName+'! You guessed '+userScore+' questions correctly out of '+questions.length);
+
+/* var nameResponse = prompt('Question 1: Is my name Andrew?');
 //normalize response
 var nameResponseNorm = nameResponse.toUpperCase();
 if(nameResponseNorm === 'Y'||nameResponseNorm === 'YES'){
@@ -73,4 +134,4 @@ if(tuckerResponseNorm === 'Y'||tuckerResponseNorm === 'YES'){
     alert('Invalid response, please reload the page and respond yes or no.');
 }
 
-alert('Thanks for taking my About Me quiz, '+userName+'!')
+*/
