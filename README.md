@@ -10,4 +10,4 @@ The site also requests a username and reports to users their final score once th
 
 Further work on this project will modify the files in this same repo.
 
-
+Andrew and Brody worked together to create the function for lab 04,  (Andrew navigating, Brody driving).
