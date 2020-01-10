@@ -2,7 +2,7 @@
 
 var questions = ['Is my name Andrew?', 'Am I younger than 25 years old?', 'Is green my favorite color?', 'Have I lived in China?', 'Does my family have a cat named Tucker?', 'How many siblings do I have?', 'What is a city I have lived in other than Seattle?'];
 var answers = [['yes'], ['no'], ['yes'], ['yes'], ['no'], ['1'], ['mercer island', 'pittsburgh', 'dongguan']];
-var correctMsgs = ['Correct!','Correct! I am 27.','Correct!', 'Correct! I lived there for a year.', 'Correct! Tucker is a dog, not a cat :)', 'Correct! I have a younger sister.', 'test'];
+var correctMsgs = ['Correct!','Correct! I am 27.','Correct!', 'Correct! I lived there for a year.', 'Correct! Tucker is a dog, not a cat :)', 'Correct! I have a younger sister.', 'Correct! I have lived in Seattle, Mercer Island, Pittsburgh, and Dongguan, China'];
 var attempts = [1, 1, 1, 1, 1, 4, 6];
 var noAttemptsMsg = 'You are out of attempts!';
 var userScore = 0;
