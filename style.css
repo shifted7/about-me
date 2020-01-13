@@ -5,6 +5,7 @@ body {
     margin:0px;
     color: #242424;
     min-width: 960px;
+    background-color: #3ABAD2;
 }
 
 header {
@@ -27,7 +28,7 @@ p {
 h1 {
     font-size: 100px;
     min-height: 300px;
-    color:#16ABC7;
+    color:#3ABAD2;
     font-family: helvetica, arial, sans-serif;
     /* text-shadow: 1px 1px #E4E4E4; */
     text-align: center;
@@ -47,29 +48,6 @@ h3 {
 
 ul {
     list-style-type: none;
-}
-
-.workName {
-    font-size: 48px;
-    float: left;
-    min-width: 600px;
-    text-align: right;
-    height: 200px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 20px;
-    line-height: 200px;
-
-}
-
-div .workInfo {
-    float: left;
-    min-width: 600px;
-    text-align: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left:20px;
-    line-height: 40px;
 
 }
 
@@ -86,10 +64,33 @@ div .workInfo {
     min-height: 720px;
     padding-top: 80px;
     padding-bottom: 80px;
-    padding-right: 175px;
-    padding-left: 175px;
     background-color: #3ABAD2;
 
+}
+
+.workName {
+    font-size: 32px;
+    font-weight: bold;
+    float: left;
+    text-align: right;
+    height: 200px;
+    margin-right: 40px;
+    width: 33%;
+    line-height: 200px;
+    clear: left;
+
+}
+
+div .workInfo {
+    float: left;
+    min-width: 400px;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    line-height: 40px;
+    border-left: 10px;
+    border-left-style: solid;
 }
 
 #education {
@@ -101,7 +102,22 @@ div .workInfo {
     min-height: 640px;
     color: #E4E4E4;
     background-color: #242424;
+    text-align: center;
     
+}
+
+.schoolName {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 80px;
+    
+}
+.schoolDetails{
+    padding-left:0px;
+    border: #FF8817;
+    border-style: solid;
+    padding-top:40px;
+    padding-bottom: 40px;
 }
 
 #movies {
