@@ -129,3 +129,11 @@ div .workInfo {
     background-color: #E4E4E4;
 
 }
+
+blockquote {
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+    quotes: initial;
+}
