@@ -6,8 +6,10 @@ This project contains seven questions about me, handled by the javascipt code in
 
 The next two questions are more involved, both for the user and from a coding perspective. The first of the two has the user guess the number of siblings I have, giving only four guesses. The second asks the user to name a city in which I have lived besides Seattle, with six guesses to do so.
 
-The site also requests a username and reports to users their final score once they have answered all seven questions. For each question, the code strives to predict any errors in the user input and allow a user to try again should they fail.
+The site also requests a username and reports to users their final score once they have answered all seven questions.
+
+After the quiz, the main page contains more information including my work history and education. It is used to practice using color schemes, element layout, and fonts in css.
 
 Further work on this project will modify the files in this same repo.
 
-Andrew and Brody worked together to create the function for lab 04,  (Andrew navigating, Brody driving).
+Andrew and Brody worked together to create the function for lab 04 (Andrew navigating, Brody driving).
